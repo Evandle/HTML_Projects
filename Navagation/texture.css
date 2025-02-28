@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    background-image: url('./topimage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-image-bottom{
+    background-image: url('./bottombackground.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.Navagation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.92); 
+    padding: 15px 40px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+
+.Navagation .company-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto; 
+}
+
+.Navagation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.Navagation h3 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.Navagation h5 {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.Navagation a:hover {
+    background-color: #808080;
+}
+
+.Navagation .nav-links {
+    display: flex;
+    gap: 15px; 
+    padding-right: 40px;
+}
+
+.midbody {
+    background-color: rgba(255, 255, 255, 0.92);
+    padding-left: 40px; 
+    padding-right: 40px; 
+    padding-top: 20px;  
+    padding-bottom: 20px;
+    background-size: cover;
+    height: 100vh;
+    z-index: 2;
+}
+
+.product p, a {
+    color: gray;
+}
+
+.greet {
+    height: 101vh;
+    width: 100%;
+}
+
+.big {
+    color: white;
+    font-size: 5vw;
+}
+
+.greet-text{
+    padding-left: 40px; 
+}
+
+.button{
+
+
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-image: url('./button1.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    text-align: center;
+    overflow: hidden;
+    height: 50px; 
+}
+
+.button a {
+    text-decoration: none; 
+}
+
+.whiteline{
+    background-color: rgba(255, 255, 255, 0.808);
+    
+}
+.botpic{
+    background-image: url('./bottomimage.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+    z-index: -1;
+}
+.bottomback{
+    background-color: rgb(99, 245, 255);
+
+}
+
+.vertical-line {
+    width: 1px; 
+    height: 100vh; 
+    background-color: #000; 
+    margin: 0 auto; 
+}
