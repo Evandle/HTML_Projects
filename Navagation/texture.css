@@ -18,7 +18,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 35vh;
     width: 100%;
     z-index: -1;
 }
@@ -77,13 +77,11 @@
 }
 
 .midbody {
-    background-color: rgba(255, 255, 255, 0.92);
     padding-left: 40px; 
     padding-right: 40px; 
     padding-top: 20px;  
     padding-bottom: 20px;
     background-size: cover;
-    height: 100vh;
     z-index: 2;
 }
 
@@ -99,6 +97,11 @@
 .big {
     color: white;
     font-size: 5vw;
+}
+
+.mid{
+    color: white;
+    font-size: 2vw;
 }
 
 .greet-text{
@@ -145,9 +148,16 @@
 
 }
 
-.vertical-line {
-    width: 1px; 
-    height: 100vh; 
-    background-color: #000; 
-    margin: 0 auto; 
+.text-box {
+    width: 150px;   
+    height: 20px;   
+    font-size: 16px; 
+    padding: 5px;  
+}
+
+.text-button{
+    width: 35px;
+    height: 35px;
+    font-size: 16px; 
+    padding: 5px;
 }
