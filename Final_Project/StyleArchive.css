@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    background-image: url('Home-Fuuka.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.drawlogo {
+    width: 75%;
+    height: auto;
+    float: left;
+}
+.sam1
+{
+    width: 95%;
+    height: auto;
+}
+
+.container {
+    min-width: 100vh; 
+    margin: 0 auto; 
+    padding: 8px;
+    background-color: #00000091; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    font-size: large;
+}
+
+.header-text {
+    text-align: left; 
+}
+
+
+
+
+.MidDiv {
+    padding: 20px;
+}
+
