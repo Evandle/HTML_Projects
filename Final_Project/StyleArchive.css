@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image{
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+.background-image-gif {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    width: 100vw;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+#enableSound {
+    all: unset; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+}
+
+.drawlogo {
+    width: auto;
+    height: 50px;
+    float: left;
+}
+
+.MidDiv {
+    padding: 20px;
+}
+
+.Navagation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(51, 51, 51, 0.92); 
+    padding: 15px 40px; 
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    box-sizing: border-box; 
+    overflow: hidden;
+    padding: 20px;
+}
+
+.Navagation a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.Navagation h3 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.Navagation h5 {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.Navagation a:hover {
+    background-color: #808080;
+}
+
+.Navagation .nav-links {
+    display: flex;
+    gap: 15px; 
+    padding-right: 40px;
+}
+
+.index-page .Navagation {
+    position: relative;
+}
+
+.pyroxene {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pyroxenelogo {
+    width: auto;
+    height: 40px;
+}
+
+.product {
+    width: 100%;
+    max-width: 200px; 
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+    justify-items: center; 
+}
+
+.product figure {
+    background-color: #eff4f8;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.product figure:hover {
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+.product figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+figcaption h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+figcaption p {
+    font-size: 20px;
+    color: #41b3ff;
+}
+
+.product a {
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.product hr {
+    color: black;
+    
+}
+
+.gacha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.gacha-card {
+    width: 25%;
+    min-width: 300px; 
+    padding: 20px;
+    background-color: rgba(220, 238, 253, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.gacha-card h1 {
+    text-align: left;
+    color: #425F74;
+}
+
+.gacha-card h4 {
+    
+    color: #227fc2;
+}
+
+.gacha-card p {
+    font-size: 13px;
+    color: #394955;
+}
+
+.smallnote {
+    
+    color: #8fa8b9e5;
+}
+
+.bigbutton {
+    background: linear-gradient(to right, #66ccff, #33bbff); /* Cool blue gradient */
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    transform: skew(-15deg);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.bigbutton span {
+    display: inline-block;
+    transform: skew(15deg);
+}
+
+.bigbutton:hover {
+    background: linear-gradient(to right, #55bbee, #22aadd);
+}
+
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.login-card {
+    width: 25%;
+    min-width: 300px; 
+    padding: 20px;
+    background-color: rgba(242, 249, 255, 0.85);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-card h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.login-card p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social {
+    width: 90px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+
+.social img {
+    margin-right: 5px;
+    justify-items: center;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 92%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.signup-text {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-card .bigbutton {
+    width: 70%;
+}
+
+.login-card .bigbutton h2 {
+    color: white;
+}
+
+.topup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.topup-card {
+    width: 85%;
+    max-width: 800px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.637);
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    border-radius: 0;
+    transform: translateX(-160px);
+    
+}
+
+.topup-card h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #2d4c63;
+}
+
+.topup-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.topup-item {
+    background-color: #f8fbff;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 1;
+}
+
+.topup-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.12);
+}
+
+.topup-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.topup-item h3 {
+    font-size: 15px;
+    margin: 8px 0 4px;
+    color: #333;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 14px;
+    color: #227fc2;
+    margin: 4px 0;
+}
+
+.details {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.purchase {
+    padding: 8px 18px;
+    border: none;
+    background: linear-gradient(to right, #66ccff, #33bbff);
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.purchase:hover {
+    background: linear-gradient(to right, #55bbee, #22aadd);
+}
+
+.tab-selector {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.topup-card .bigbutton {
+    width: 70%;
+    height: 16%;
+}

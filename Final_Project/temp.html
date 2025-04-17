@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Purple Archive</title>
+    <meta name="description" content="Roughly 155 characters">
+    <link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+    <div class="carousel">
+        <div class="slides">
+        <img src="image1.jpg" class="slide" alt="Slide 1">
+        <img src="image2.jpg" class="slide" alt="Slide 2">
+        <img src="image3.jpg" class="slide" alt="Slide 3">
+        </div>
+    </div>
+</body>
+</html>
+
+</* CSS */>
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* 100% x number of images */
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+<- JavaScript ->
+
+let currentIndex = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+
+setInterval(() => {
+currentIndex = (currentIndex + 1) % totalSlides;
+slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}, 3000);
