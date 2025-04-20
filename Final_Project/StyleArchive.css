@@ -20,8 +20,8 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    z-index: -1;
-    
+    z-index: 1; 
+    position: relative;
 }
 
 .background-video {
@@ -252,6 +252,71 @@ figcaption p {
     background: linear-gradient(to right, #55bbee, #22aadd);
 }
 
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    max-width: 95vw;
+    width: 95%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+}
+
+.popup-items-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 16px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+
+.popup .product {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.popup .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    justify-items: center;
+}
+
+.popup .product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.close-btn {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rarity {
+    color: gold;
+    font-size: 18px;
+    margin-top: 8px;
+}
 
 .login-container {
     display: flex;

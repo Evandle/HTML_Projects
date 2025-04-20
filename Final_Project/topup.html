@@ -71,6 +71,23 @@
         
         
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".topup-item .bigbutton");
+        
+            const values = [6600, 2352, 1200]; // Matching order of the packs
+        
+            buttons.forEach((btn, index) => {
+                btn.addEventListener("click", function () {
+                    if (window.addPyroxene) {
+                        addPyroxene(values[index]);
+                        alert(`You received ${values[index]} Pyroxenes!`);
+                    }
+                });
+            });
+        });
+        </script>
+    <script src="pyroxene.js"></script>
 </body>
 
 
